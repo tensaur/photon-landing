@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark" style="color-scheme: dark; background-color: #0c0a0f">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -8,25 +8,7 @@
       name="description"
       content="Photon streams a million metrics per second with a Rust-native stack. Open source experiment tracking without the dashboard lag."
     />
-    <meta name="theme-color" content="#faf9f7" />
-    <script>
-      (function () {
-        try {
-          var k = 'photon-theme'
-          var s = localStorage.getItem(k)
-          var dark =
-            s === 'dark' ||
-            (s !== 'light' &&
-              window.matchMedia('(prefers-color-scheme: dark)').matches)
-          var t = dark ? 'dark' : 'light'
-          document.documentElement.setAttribute('data-theme', t)
-          document.documentElement.style.colorScheme = t
-          var m = document.querySelector('meta[name="theme-color"]')
-          if (m)
-            m.setAttribute('content', dark ? '#0c0a0f' : '#faf9f7')
-        } catch (e) {}
-      })()
-    </script>
+    <meta name="theme-color" content="#0c0a0f" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
